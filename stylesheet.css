@@ -25,12 +25,11 @@ nav ul {
   padding-left: 14vw;
 }
 
-nav ul li {
+nav li {
   display: flex;
   margin-right: 1vw;
   padding: 0.3em 0.7em 0.3em 0.7em;
-  background-color: white;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
 }
 
@@ -43,7 +42,21 @@ nav p {
   font-size: 1.7rem;
   color: white;
 }
+nav a {
+  text-decoration: none;
+}
 
+nav a:link {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+.border {
+  grid-column: 2/5;
+  border-bottom: 0.1px solid #696969;
+  opacity: 0.4;
+}
 .checkmark {
   margin-left: 5em;
 }
@@ -53,9 +66,22 @@ nav p {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 2em 20em 0em 20em;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .timerbox ul {
   list-style-type: none;
   display: flex;
+  padding-top: 0.5em;
+}
+
+.timerbox li {
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  color: white;
+}
+.timerbox li:hover {
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #af423e;
 }
